@@ -5,8 +5,10 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX gc: <http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#>
 PREFIX stat: <https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#>
+
 SELECT DISTINCT ?Organization ?PubicHospital ?HospitalBed
-WHERE { 
+WHERE 
+{ 
 ?Organization rdf:type owl:NamedIndividual .
 ?Organization rdf:type gc:PublicHospital .
 ?Organization stat:OWLObjectProperty_004089 ?HospitalBed
