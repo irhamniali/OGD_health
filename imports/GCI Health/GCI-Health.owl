@@ -1,0 +1,1012 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#"
+     xml:base="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl"
+     xmlns:pr="http://www.w3.org/ns/prov#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:gci="http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation-v2.owl#"
+     xmlns:sws="http://sws.geonames.org"
+     xmlns:sc="http://schema.org/docs/schemaorg.owl#"
+     xmlns:geo="http://geonames.org/ontology/ontology_v3.1.rdf#"
+     xmlns:biositemap="http://bioontology.org/ontologies/biositemap.owl#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:ic="http://ontology.eil.utoronto.ca/icontact.owl#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:gd="http://linkedgeodata.org/ontology/"
+     xmlns:wot="http://xmlns.com/wot/0.1/"
+     xmlns:om="http://www.wurvoc.org/vocabularies/om-1.8/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:prov-links="http://www.w3.org/ns/prov-links-20130430#"
+     xmlns:cc="http://creativecommons.org/ns#"
+     xmlns:adms="http://www.w3.org/ns/adms#"
+     xmlns:org="http://ontology.eil.utoronto.ca/organization.owl#"
+     xmlns:kp="http://ontology.eil.utoronto.ca/trust.owl#"
+     xmlns:ot="http://www.w3.org/2006/time#"
+     xmlns:voaf="http://purl.org/vocommons/voag#"
+     xmlns:gs="http://ontology.eil.utoronto.ca/govstat.owl#"
+     xmlns:sumo="http://ontologyportal.org/sumo.owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:isoi="http://ontology.eil.utoronto.ca/GCI/ISO37120/Innovation.owl#"
+     xmlns:iso37120="http://ontology.eil.utoronto.ca/GCI/ISO37120.owl#"
+     xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:data-view="http://www.w3.org/2003/g/data-view#">
+    <owl:Ontology rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl">
+        <owl:imports rdf:resource="http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation-v2.owl"/>
+        <owl:imports rdf:resource="http://www.w3.org/2002/07/owl"/>
+        <owl:imports rdf:resource="http://ontology.eil.utoronto.ca/GCI/Education/GCI-Education.owl"/>
+        <owl:imports rdf:resource="http://ontology.eil.utoronto.ca/icontact.owl"/>
+        <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <owl:imports rdf:resource="http://bioontology.org/ontologies/BiomedicalResources.owl"/>
+        <dc:title rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Global City Indicators Healthcare Ontology</dc:title>
+        <terms:rights xml:lang="en">Copyright @ 2018 Mark S. Fox</terms:rights>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">v 1.0 May 27, 2018</owl:versionInfo>
+        <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">gcih</vann:preferredNamespacePrefix>
+        <cc:license>http://creativecommons.org/licenses/by/3.0/</cc:license>
+        <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl</vann:preferredNamespaceUri>
+        <dc:description rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">The Healthcare Ontology has been developed by the Enterprise Integration Lab at the University of Toronto
+
+The Health Ontology is defined in the paper: Falodi, J., Fox, M.S., (2018), &quot;A Healthcare Ontology for Global City Indicators (ISO37120)&quot;, Working Paper, Enterprise Integration Lab, Mechanical &amp; Industrial Engineering, University of Toronto.
+
+Contacts: Mark S. Fox, msf@eil.utoronto.ca
+Contact: Jide G. Falodi, jide.falodi@mail.utoronto.ca</dc:description>
+        <terms:modified xml:lang="en">May 27, 2018 by Jide Falodi</terms:modified>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jide Falodi &amp; Mark Fox</dc:creator>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://creativecommons.org/ns#license -->
+
+    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/issued -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/issued"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#qualifiedCardinality -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#qualifiedCardinality"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#time -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#time"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://bioontology.org/ontologies/BiomedicalResources.owl#issued_By -->
+
+    <owl:ObjectProperty rdf:about="http://bioontology.org/ontologies/BiomedicalResources.owl#issued_By">
+        <rdfs:domain rdf:resource="http://bioontology.org/ontologies/BiomedicalResources.owl#NursingLicense"/>
+        <rdfs:range rdf:resource="http://bioontology.org/ontologies/BiomedicalResources.owl#HealthcareAssociation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Education/GCI-Education.owl#has_Placement -->
+
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/GCI/Education/GCI-Education.owl#has_Placement">
+        <rdfs:domain rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#ProfessionalHealthcareProvider"/>
+        <rdfs:range rdf:resource="http://ontology.eil.utoronto.ca/GCI/Education/GCI-Education.owl#Placement"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation-v2.owl#cardinality_of -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation-v2.owl#cardinality_of"/>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#CityCurrentlyResidingIn -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#CityCurrentlyResidingIn">
+        <rdfs:subPropertyOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#ResidencyObjectProperty"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#CityCurrentlyResidingIn"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://schema.org/City"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#LE_Unit -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#LE_Unit">
+        <rdfs:domain rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Life_Expectancy_Value"/>
+        <rdfs:range rdf:resource="http://www.wurvoc.org/vocabularies/om-1.6/Singular_unit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#ResidencyObjectProperty -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#ResidencyObjectProperty"/>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#committedBy -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#committedBy">
+        <rdfs:subPropertyOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#healthObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#contains -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#contains">
+        <rdfs:domain rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Hospital"/>
+        <rdfs:range rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Hospital_Ward"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#earns -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#earns">
+        <rdfs:domain rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#ProfessionalHealthcareProvider"/>
+        <rdfs:range rdf:resource="http://ontology.eil.utoronto.ca/GCI/Education/GCI-Education.owl#EducationDegree"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#forAddress -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#forAddress">
+        <rdfs:subPropertyOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#ResidencyObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#forYear -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#forYear">
+        <rdfs:domain rdf:resource="http://ontology.eil.utoronto.ca/GCI/Education/GCI-Education.owl#Placement"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#forYear"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.w3.org/2006/time#DateTimeInterval"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#hasBuildingClass -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#hasBuildingClass">
+        <rdfs:subPropertyOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#ResidencyObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#hasProof -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#hasProof">
+        <rdfs:subPropertyOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#ResidencyObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#hasUse -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#hasUse">
+        <rdfs:subPropertyOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#ResidencyObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#has_Licensure -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#has_Licensure"/>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#healthObjectProperty -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#healthObjectProperty"/>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#holds -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#holds">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#holds"/>
+                <owl:someValuesFrom rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#LicenseHolder"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#isIssuedTo"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://bioontology.org/ontologies/BiomedicalResourceOntology.owl#License"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#isIssuedTo -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#isIssuedTo">
+        <rdfs:domain rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#LicenseHolder"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#holds"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://bioontology.org/ontologies/BiomedicalResourceOntology.owl#License"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#isValidFor -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#isValidFor">
+        <rdfs:domain rdf:resource="http://bioontology.org/ontologies/BiomedicalResources.owl#NursingLicense"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#isValidFor"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2006/time#DateTimeInterval"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#is_Alive -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#is_Alive">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#is_Alive"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#is_Alive"/>
+                <owl:allValuesFrom rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Alive_Status"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#is_issued_by -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#is_issued_by">
+        <rdfs:subPropertyOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#ResidencyObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#is_used_by -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#is_used_by">
+        <rdfs:subPropertyOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#ResidencyObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#is_validated_by -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#is_validated_by">
+        <rdfs:subPropertyOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#ResidencyObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#licenseType -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#licenseType"/>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#locatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#locatedIn">
+        <rdfs:domain rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#HospitalBed"/>
+        <rdfs:range rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Hospital_Ward"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#occuredIn -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#occuredIn">
+        <rdfs:subPropertyOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#healthObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#practicing_in -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#practicing_in">
+        <rdfs:subPropertyOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#healthObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#reportedBy -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#reportedBy">
+        <rdfs:subPropertyOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#healthObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#reside_in -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#reside_in">
+        <rdfs:subPropertyOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#ResidencyObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#residentOf -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#residentOf">
+        <rdfs:subPropertyOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#ResidencyObjectProperty"/>
+        <rdfs:range rdf:resource="http://schema.org/City"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/service#consumes -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/service#consumes"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#CityCurrentlyResidingIn -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#CityCurrentlyResidingIn">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#ServiceConsumptionDataProperty -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#ServiceConsumptionDataProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#certification_Date -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#certification_Date">
+        <rdfs:subPropertyOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#residencyDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#expiry_Date -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#expiry_Date">
+        <rdfs:subPropertyOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#certification_Date"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#residencyDataProperty -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#residencyDataProperty"/>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#type -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#type">
+        <rdfs:subPropertyOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#ServiceConsumptionDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/service#delay -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/service#delay"/>
+    
+
+
+    <!-- http://purl.org/ontology/service#queue -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/service#queue"/>
+    
+
+
+    <!-- http://schema.org/expires -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/expires"/>
+    
+
+
+    <!-- http://schema.org/priceCurrency -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/priceCurrency"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://bioontology.org/ontologies/BiomedicalResources.owl#HealthcareAssociation -->
+
+    <owl:Class rdf:about="http://bioontology.org/ontologies/BiomedicalResources.owl#HealthcareAssociation">
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/organization.owl#Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioontology.org/ontologies/BiomedicalResources.owl#NursingLicense -->
+
+    <owl:Class rdf:about="http://bioontology.org/ontologies/BiomedicalResources.owl#NursingLicense">
+        <rdfs:subClassOf rdf:resource="http://bioontology.org/ontologies/BiomedicalResourceOntology.owl#License"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Action -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Action">
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#GCIHealthThing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#committedBy"/>
+                <owl:allValuesFrom rdf:resource="http://schema.org/Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#occuredIn"/>
+                <owl:allValuesFrom rdf:resource="http://schema.org/City"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#reportedBy"/>
+                <owl:allValuesFrom rdf:resource="http://ontology.eil.utoronto.ca/organization.owl#Organization"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Alive_Status -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Alive_Status">
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#GCIHealthThing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation-v2.owl#defined_by"/>
+                <owl:allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#DayCare_Bed -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#DayCare_Bed">
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#HospitalBed"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Dead_Infant_Pop_Size -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Dead_Infant_Pop_Size">
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation-v2.owl#Population_size"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Dead_Infant_Population -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Dead_Infant_Population">
+        <rdfs:subClassOf rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Quantity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation-v2.owl#defined_by"/>
+                <owl:allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#GCIHealthThing -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#GCIHealthThing"/>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Hospital -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Hospital">
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#MedicalOrganization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#HospitalBed -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#HospitalBed">
+        <rdfs:subClassOf rdf:resource="http://bioontology.org/ontologies/BiomedicalResourceOntology.owl#Material_Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#HospitalStaff_Bed -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#HospitalStaff_Bed">
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#HospitalBed"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Hospital_Ward -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Hospital_Ward">
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/organization.owl#Division"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#InPatient_Bed -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#InPatient_Bed">
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#HospitalBed"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Inpatient_Hospital_Bed_Pop_Size -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Inpatient_Hospital_Bed_Pop_Size">
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation-v2.owl#Population_size"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#GCIHealthThing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation-v2.owl#for_city"/>
+                <owl:allValuesFrom rdf:resource="http://schema.org/City"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:description xml:lang="en">The population of hospital beds</dc:description>
+        <dc:description xml:lang="en">a subclass of the GCI Population size class that defines the population associated with a place and will have a unit of measure property of a decokilopc as defined in Fox (2014). The ‘CityResidentSize’ is defined as the ‘cardinality_of’ the ‘CityPopulation’.</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#LicenseHolder -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#LicenseHolder">
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/organization.owl#OrganizationAgent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Life_Expectancy_Value -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Life_Expectancy_Value">
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#GCIHealthThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#MHP_Pop -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#MHP_Pop">
+        <rdfs:subClassOf rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Quantity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation-v2.owl#defined_by"/>
+                <owl:allValuesFrom rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#MentalHealthProfessional"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#MHP_Pop_Size -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#MHP_Pop_Size">
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation-v2.owl#Population_size"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#MedicalOrganization -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#MedicalOrganization">
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/organization.owl#Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#MentalHealthProfessional -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#MentalHealthProfessional">
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#ProfessionalHealthcareProvider"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Midwife -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Midwife">
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#ProfessionalHealthcareProvider"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#MidwiferyLicense -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#MidwiferyLicense">
+        <rdfs:subClassOf rdf:resource="http://bioontology.org/ontologies/BiomedicalResourceOntology.owl#License"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#NumberofHospitalBedsPopulation -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#NumberofHospitalBedsPopulation">
+        <rdfs:subClassOf rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Quantity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation-v2.owl#defined_by"/>
+                <owl:someValuesFrom rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#HospitalBed"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Nurse -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Nurse">
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#ProfessionalHealthcareProvider"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Nurse_Midwife_Pop -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Nurse_Midwife_Pop">
+        <rdfs:subClassOf rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Quantity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation-v2.owl#defined_by"/>
+                <owl:allValuesFrom rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#ProfessionalHealthcareProvider"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Nurse_Midwife_Pop_Size -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Nurse_Midwife_Pop_Size">
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation-v2.owl#Population_size"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Outpatient_Bed -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Outpatient_Bed">
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#HospitalBed"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#PatientFamilyMemberBed -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#PatientFamilyMemberBed">
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#HospitalBed"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Physician -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Physician">
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#ProfessionalHealthcareProvider"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Physician_Population -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Physician_Population">
+        <rdfs:subClassOf rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Quantity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation-v2.owl#defined_by"/>
+                <owl:allValuesFrom rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Physician"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation-v2.owl#for_city"/>
+                <owl:allValuesFrom rdf:resource="http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation-v2.owl#City"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Physician_Population_Size -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Physician_Population_Size">
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation-v2.owl#Population_size"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#PreAnaesthesia_Bed -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#PreAnaesthesia_Bed">
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#HospitalBed"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#PrivateHospital -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#PrivateHospital">
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Hospital"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#ProfessionalHealthcareProvider -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#ProfessionalHealthcareProvider">
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/organization.owl#OrganizationAgent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#has_Licensure"/>
+                <owl:allValuesFrom rdf:resource="http://bioontology.org/ontologies/BiomedicalResourceOntology.owl#License"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#PublicHospital -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#PublicHospital">
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Hospital"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Situation -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Situation">
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#GCIHealthThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Suicide -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Suicide">
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Situation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Under_5_Pop_Size -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Under_5_Pop_Size">
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation-v2.owl#Population_size"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation-v2.owl#defined_by"/>
+                <owl:allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Under_5_Population -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Under_5_Population">
+        <rdfs:subClassOf rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Quantity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Innovation/GCI-Innovation.owl#CityPopulation -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/GCI/Innovation/GCI-Innovation.owl#CityPopulation">
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation-v2.owl#Population"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation-v2.owl#defined_by"/>
+                <owl:allValuesFrom rdf:resource="http://ontology.eil.utoronto.ca/GCI/Innovation/GCI-Innovation.owl#Resident"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>The ‘CityPopulation’ is defined by a city and the definition of a resident.  Note that in the definition of an ISO 37120 indicator the definition of a resident is generic.  A City should provide a more specific definition that uniquely identifies residents of their city, using the resident ontology.  Similarly, the numerator’s size is defined as the cardinality of a population which is, in turn, defined by a city and the service user.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Innovation/GCI-Innovation.owl#Resident -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/GCI/Innovation/GCI-Innovation.owl#Resident">
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#GCIHealthThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/organization.owl#Organization -->
+
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/organization.owl#Organization">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Organization"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/ontology/service#ServiceLimitation -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/service#ServiceLimitation"/>
+    
+
+
+    <!-- http://schema.org/City -->
+
+    <rdf:Description rdf:about="http://schema.org/City">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#practicing_in"/>
+                <owl:allValuesFrom rdf:resource="http://schema.org/City"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://schema.org/GovernmentOrganization -->
+
+    <owl:Class rdf:about="http://schema.org/GovernmentOrganization"/>
+    
+
+
+    <!-- http://schema.org/Organization -->
+
+    <owl:Class rdf:about="http://schema.org/Organization"/>
+    
+
+
+    <!-- http://schema.org/Person -->
+
+    <owl:Class rdf:about="http://schema.org/Person"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/spec/Document -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/spec/Document">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#is_validated_by"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://ontology.eil.utoronto.ca/organization.owl#GovernmentOrganization"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <rdf:Description>
+        <owl:unionOf>
+            <rdf:Description/>
+        </owl:unionOf>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:unionOf>
+            <rdf:Description/>
+        </owl:unionOf>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:unionOf>
+            <rdf:Description/>
+        </owl:unionOf>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
