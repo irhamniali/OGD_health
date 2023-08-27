@@ -1,0 +1,721 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://uthealth.io/ontology/pdbko.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://uthealth.io/ontology/pdbko.owl">
+    <Prefix name="" IRI="http://www.semanticweb.org/irham/ontologies/2023/7/untitled-ontology-22/"/>
+    <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
+    <Prefix name="ns" IRI="http://creativecommons.org/ns#"/>
+    <Prefix name="obo" IRI="http://purl.obolibrary.org/obo/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="adms" IRI="http://www.w3.org/ns/adms#"/>
+    <Prefix name="foaf" IRI="http://xmlns.com/foaf/0.1/"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="skos" IRI="http://www.w3.org/2004/02/skos/core#"/>
+    <Prefix name="vann" IRI="http://purl.org/vocab/vann/"/>
+    <Prefix name="swrla" IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"/>
+    <Prefix name="terms" IRI="http://purl.org/dc/terms/"/>
+    <Prefix name="protege" IRI="http://protege.stanford.edu/plugins/owl/protege#"/>
+    <Prefix name="subsets" IRI="http://purl.obolibrary.org/obo/ro/subsets#"/>
+    <Prefix name="oboInOwl" IRI="http://www.geneontology.org/formats/oboInOwl#"/>
+    <Prefix name="data-view" IRI="http://www.w3.org/2003/g/data-view#"/>
+    <Prefix name="biositemap" IRI="http://bioontology.org/ontologies/biositemap.owl#"/>
+    <Import>http://bioontology.org/ontologies/BiomedicalResources.owl</Import>
+    <Import>http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl</Import>
+    <Import>http://purl.obolibrary.org/obo/omrse/releases/2023-05-19/omrse.owl</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <Literal>“Medical service data ontology” (Ontologi Data Pelayanan Medis)</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#Division"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#OrganizationThing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#Policy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Adult_Vaccine_Service"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Afternoon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AllDay"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cardiologist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cash"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Children_Vaccine_Service"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CreditCard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Debitcard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hospital_bed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Insurance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Internist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Medicine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Medicine_classification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Medicine_quantity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Medicine_type"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Morning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Neurologist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Noon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Payment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Peditrician"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pharmacy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Private_insurance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Public_Insurance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pulmologist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ScheduleService"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Specialist_Doctors"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TimeArrangement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vaccine_Service"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#1stClassBed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#2ndClassBed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#3rdClassBed"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://ontology.eil.utoronto.ca/organization.owl#hasPolicy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="obo:OMRSE_00000167"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPriceService"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSchedule"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ontology-of-units-of-measure.org/vocabularies/om-2/hasQuantity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="obo:OMRSE_00000137"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasNumberofBed"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.w3.org/2006/time#day"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:gDay"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:time"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://bioontology.org/ontologies/BiomedicalResourceOntology.owl#Material_Resource"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/2006/time#unitWeek"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:duration"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="skos:note"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation.owl#City"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="rdfs:subClassOf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/2006/time#Wednesday"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="skos:changeNote"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:annotatedTarget"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wurvoc.org/vocabularies/om-1.8/month"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:complementOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:propertyChainAxiom"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="owl:maxCardinality"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="owl:maxQualifiedCardinality"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:created"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:distinctMembers"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/2006/time#Thursday"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:onProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:inverseOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:withRestrictions"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:isVersionOf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/2006/time#unitMonth"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:date"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:members"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:gMonth"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:gYearMonth"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:oneOf"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="data-view:namespaceTransformation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:onClass"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="rdf:Property"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:someValuesFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:equivalentProperty"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="xsd:pattern"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/2006/time#Tuesday"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:sameAs"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/2006/time#unitDay"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/2006/time#Monday"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/2006/time#unitSecond"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="owl:minQualifiedCardinality"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:onProperties"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:targetIndividual"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:hasKey"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="rdfs:domain"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:gYear"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:onDatatype"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:datatypeComplementOf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/2006/time#Saturday"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:hasSelf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:intersectionOf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wurvoc.org/vocabularies/om-1.8/day"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="rdfs:range"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="owl:minCardinality"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="foaf:Person"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/2006/time#unitHour"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/2006/time#Friday"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="owl:cardinality"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:assertionProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:onDataRange"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:unionOf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/2006/time#unitMinute"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:equivalentClass"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:differentFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:allValuesFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:sourceIndividual"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="rdfs:subPropertyOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:propertyDisjointWith"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wurvoc.org/vocabularies/om-1.8/week"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:annotatedProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:targetValue"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="rdf:List"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/2006/time#Sunday"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:disjointWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:disjointUnionOf"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="skos:scopeNote"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="rdfs:member"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="skos:historyNote"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://bioontology.org/ontologies/BiomedicalResourceOntology.owl#License"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="skos:editorialNote"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:hasValue"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:annotatedSource"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Hospital"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="http://www.w3.org/2003/01/geo/wgs84_pos#lat"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Hospital"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="http://www.w3.org/2003/01/geo/wgs84_pos#long"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#Division"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://ontology.eil.utoronto.ca/organization.owl#hasPolicy"/>
+            <Class IRI="#Payment"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#Division"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:OMRSE_00000167"/>
+            <Class IRI="#Medicine"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#Division"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:OMRSE_00000167"/>
+            <Class IRI="#Pharmacy"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#Division"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasPriceService"/>
+            <Class IRI="#Hospital_bed"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#Division"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSchedule"/>
+            <Class IRI="#ScheduleService"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#Division"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSchedule"/>
+            <Class IRI="#Specialist_Doctors"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#Division"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontology-of-units-of-measure.org/vocabularies/om-2/hasQuantity"/>
+            <Class IRI="#Hospital_bed"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#Division"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontology-of-units-of-measure.org/vocabularies/om-2/hasQuantity"/>
+            <Class IRI="#Medicine_quantity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#Division"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontology-of-units-of-measure.org/vocabularies/om-2/hasQuantity"/>
+            <Class IRI="#1stClassBed"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#Division"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontology-of-units-of-measure.org/vocabularies/om-2/hasQuantity"/>
+            <Class IRI="#2ndClassBed"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#Division"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontology-of-units-of-measure.org/vocabularies/om-2/hasQuantity"/>
+            <Class IRI="#3rdClassBed"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#Division"/>
+        <DataSomeValuesFrom>
+            <DataProperty abbreviatedIRI="obo:OMRSE_00000137"/>
+            <Datatype abbreviatedIRI="xsd:gDay"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#Division"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="http://www.w3.org/2006/time#day"/>
+            <Datatype abbreviatedIRI="xsd:gDay"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Adult_Vaccine_Service"/>
+        <Class IRI="#Vaccine_Service"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Afternoon"/>
+        <Class IRI="#TimeArrangement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Afternoon"/>
+        <DataSomeValuesFrom>
+            <DataProperty abbreviatedIRI="obo:OMRSE_00000137"/>
+            <Datatype abbreviatedIRI="xsd:time"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AllDay"/>
+        <Class IRI="#TimeArrangement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AllDay"/>
+        <DataSomeValuesFrom>
+            <DataProperty abbreviatedIRI="obo:OMRSE_00000137"/>
+            <Datatype abbreviatedIRI="xsd:time"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cardiologist"/>
+        <Class IRI="#Specialist_Doctors"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cash"/>
+        <Class IRI="#Payment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Children_Vaccine_Service"/>
+        <Class IRI="#Vaccine_Service"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CreditCard"/>
+        <Class IRI="#Payment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Debitcard"/>
+        <Class IRI="#Payment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hospital_bed"/>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#Division"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Insurance"/>
+        <Class IRI="#Payment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Internist"/>
+        <Class IRI="#Specialist_Doctors"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Medicine"/>
+        <Class IRI="#Pharmacy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Medicine_classification"/>
+        <Class IRI="#Medicine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Medicine_quantity"/>
+        <Class IRI="#Medicine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Medicine_type"/>
+        <Class IRI="#Medicine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Morning"/>
+        <Class IRI="#TimeArrangement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Neurologist"/>
+        <Class IRI="#Specialist_Doctors"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Noon"/>
+        <Class IRI="#TimeArrangement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Payment"/>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#Policy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Payment"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://ontology.eil.utoronto.ca/organization.owl#hasPolicy"/>
+            <Class IRI="#Hospital_bed"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Payment"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://ontology.eil.utoronto.ca/organization.owl#hasPolicy"/>
+            <Class IRI="#Pharmacy"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Payment"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://ontology.eil.utoronto.ca/organization.owl#hasPolicy"/>
+            <Class IRI="#Specialist_Doctors"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Payment"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://ontology.eil.utoronto.ca/organization.owl#hasPolicy"/>
+            <Class IRI="#Vaccine_Service"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Peditrician"/>
+        <Class IRI="#Specialist_Doctors"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pharmacy"/>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#Division"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Private_insurance"/>
+        <Class IRI="#Insurance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Public_Insurance"/>
+        <Class IRI="#Insurance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pulmologist"/>
+        <Class IRI="#Specialist_Doctors"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ScheduleService"/>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#OrganizationThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ScheduleService"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSchedule"/>
+            <Class IRI="#Specialist_Doctors"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Specialist_Doctors"/>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#Division"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TimeArrangement"/>
+        <Class IRI="#ScheduleService"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TimeArrangement"/>
+        <DataSomeValuesFrom>
+            <DataProperty abbreviatedIRI="obo:OMRSE_00000137"/>
+            <Datatype abbreviatedIRI="xsd:gDay"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vaccine_Service"/>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#Division"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#1stClassBed"/>
+        <Class IRI="#Hospital_bed"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#2ndClassBed"/>
+        <Class IRI="#Hospital_bed"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#3rdClassBed"/>
+        <Class IRI="#Hospital_bed"/>
+    </SubClassOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSchedule"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasNumberofBed"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
