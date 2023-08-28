@@ -40,7 +40,7 @@
         <owl:imports rdf:resource="http://ontology.eil.utoronto.ca/GCI/Education/GCI-Education.owl"/>
         <owl:imports rdf:resource="http://ontology.eil.utoronto.ca/icontact.owl"/>
         <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
-        <owl:imports rdf:resource="http://bioontology.org/ontologies/BiomedicalResources.owl"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/irhamniali/OGD_health/main/imports/BRO.owl"/>
         <dc:title rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Global City Indicators Healthcare Ontology</dc:title>
         <terms:rights xml:lang="en">Copyright @ 2018 Mark S. Fox</terms:rights>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">v 1.0 May 27, 2018</owl:versionInfo>
