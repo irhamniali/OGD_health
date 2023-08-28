@@ -17,7 +17,7 @@
     xmlns:BRO="http://bioontology.org/ontologies/BiomedicalResourceOntology.owl#"
     xmlns:desc="http://bioontology.org/ontologies/biositemap.owl#"
   xml:base="file:/Users/twhetzel/Documents/Stanford/Outreach/BRO/BRO_v3.0_alpha3/BRO_v3.0_alpha3.owl">
-  <owl:Ontology rdf:about="http://bioontology.org/ontologies/BiomedicalResources.owl">
+  <owl:Ontology rdf:about="https://raw.githubusercontent.com/irhamniali/OGD_health/main/imports/BRO.owl">
     <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >3.2.1</owl:versionInfo>
