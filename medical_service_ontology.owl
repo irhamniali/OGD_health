@@ -84,9 +84,6 @@
         <Class IRI="#Debit_Card_Transaction"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Individual_Payment_Transaction"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Insurance_Payment_Transaction"/>
     </Declaration>
     <Declaration>
@@ -112,6 +109,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Noon_Service"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Patient_Funding_Transaction"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Peditrician"/>
@@ -453,7 +453,7 @@
         <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#Division"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://ontology.eil.utoronto.ca/organization.owl#hasPolicy"/>
-            <Class IRI="#Individual_Payment_Transaction"/>
+            <Class IRI="#Patient_Funding_Transaction"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -558,7 +558,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Cash_Transaction"/>
-        <Class IRI="#Individual_Payment_Transaction"/>
+        <Class IRI="#Patient_Funding_Transaction"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Children_Vaccine_Service"/>
@@ -566,40 +566,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Credit_Card_Transaction"/>
-        <Class IRI="#Individual_Payment_Transaction"/>
+        <Class IRI="#Patient_Funding_Transaction"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Debit_Card_Transaction"/>
-        <Class IRI="#Individual_Payment_Transaction"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Individual_Payment_Transaction"/>
-        <Class IRI="http://bioontology.org/ontologies/BiomedicalResourceOntology.owl#Funding_Resource"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Individual_Payment_Transaction"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://ontology.eil.utoronto.ca/organization.owl#hasPolicy"/>
-            <Class IRI="#Pharmacy_Service"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Individual_Payment_Transaction"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://ontology.eil.utoronto.ca/organization.owl#hasPolicy"/>
-            <Class IRI="#Specialist_Doctors"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Individual_Payment_Transaction"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://ontology.eil.utoronto.ca/organization.owl#hasPolicy"/>
-            <Class IRI="#Vaccine_Service"/>
-        </ObjectSomeValuesFrom>
+        <Class IRI="#Patient_Funding_Transaction"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Insurance_Payment_Transaction"/>
-        <Class IRI="#Individual_Payment_Transaction"/>
+        <Class IRI="#Patient_Funding_Transaction"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Internist"/>
@@ -634,6 +609,31 @@
         <Class IRI="#Schedule_Service"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Patient_Funding_Transaction"/>
+        <Class IRI="http://bioontology.org/ontologies/BiomedicalResourceOntology.owl#Funding_Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Patient_Funding_Transaction"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://ontology.eil.utoronto.ca/organization.owl#hasPolicy"/>
+            <Class IRI="#Pharmacy_Service"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Patient_Funding_Transaction"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://ontology.eil.utoronto.ca/organization.owl#hasPolicy"/>
+            <Class IRI="#Specialist_Doctors"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Patient_Funding_Transaction"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://ontology.eil.utoronto.ca/organization.owl#hasPolicy"/>
+            <Class IRI="#Vaccine_Service"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Peditrician"/>
         <Class IRI="#Specialist_Doctors"/>
     </SubClassOf>
@@ -643,7 +643,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Private_insurance_Transaction"/>
+        <Class IRI="http://bioontology.org/ontologies/BiomedicalResourceOntology.owl#Private_Funding_Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Private_insurance_Transaction"/>
         <Class IRI="#Insurance_Payment_Transaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Public_Insurance_Transaction"/>
+        <Class IRI="http://bioontology.org/ontologies/BiomedicalResourceOntology.owl#Federal_Funding_Resource"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Public_Insurance_Transaction"/>
