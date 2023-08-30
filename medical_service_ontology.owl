@@ -303,6 +303,9 @@
         <DataProperty IRI="#health_care_provider_name"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#indonesian_rupiah"/>
+    </Declaration>
+    <Declaration>
         <DataProperty abbreviatedIRI="owl:cardinality"/>
     </Declaration>
     <Declaration>
@@ -561,6 +564,13 @@
         <Class IRI="#Patient_Funding_Transaction"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Cash_Transaction"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#indonesian_rupiah"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Children_Vaccine_Service"/>
         <Class IRI="#Vaccine_Service"/>
     </SubClassOf>
@@ -569,8 +579,22 @@
         <Class IRI="#Patient_Funding_Transaction"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Credit_Card_Transaction"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#indonesian_rupiah"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Debit_Card_Transaction"/>
         <Class IRI="#Patient_Funding_Transaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Debit_Card_Transaction"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#indonesian_rupiah"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Insurance_Payment_Transaction"/>
@@ -611,27 +635,6 @@
     <SubClassOf>
         <Class IRI="#Patient_Funding_Transaction"/>
         <Class IRI="http://bioontology.org/ontologies/BiomedicalResourceOntology.owl#Funding_Resource"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Patient_Funding_Transaction"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://ontology.eil.utoronto.ca/organization.owl#hasPolicy"/>
-            <Class IRI="#Pharmacy_Service"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Patient_Funding_Transaction"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://ontology.eil.utoronto.ca/organization.owl#hasPolicy"/>
-            <Class IRI="#Specialist_Doctors"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Patient_Funding_Transaction"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://ontology.eil.utoronto.ca/organization.owl#hasPolicy"/>
-            <Class IRI="#Vaccine_Service"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Peditrician"/>
@@ -717,8 +720,16 @@
         <Class IRI="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#ProfessionalHealthcareProvider"/>
     </DataPropertyDomain>
     <DataPropertyRange>
+        <DataProperty IRI="#hasNumberofBed"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="#health_care_provider_name"/>
         <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#indonesian_rupiah"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
     </DataPropertyRange>
 </Ontology>
 
