@@ -93,13 +93,7 @@
         <Class IRI="#Medical_Drug_Resource"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Medicine_classification"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Medicine_quantity"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Medicine_type"/>
+        <Class IRI="#Medicine_Classification_Resource"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Morning_Service"/>
@@ -136,6 +130,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Time_Arrangement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vaccine_Resource"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Vaccine_Service"/>
@@ -433,6 +430,13 @@
     </Declaration>
     <SubClassOf>
         <Class IRI="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Hospital"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#contains"/>
+            <Class IRI="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Hospital_Ward"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Hospital"/>
         <DataSomeValuesFrom>
             <DataProperty IRI="http://www.w3.org/2003/01/geo/wgs84_pos#lat"/>
             <Datatype abbreviatedIRI="xsd:integer"/>
@@ -446,6 +450,13 @@
         </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#HospitalBed"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#locatedIn"/>
+            <Class IRI="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Hospital_Ward"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Hospital_Ward"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://ontology.eil.utoronto.ca/organization.owl#hasMember"/>
@@ -453,81 +464,11 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#Division"/>
+        <Class IRI="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Hospital_Ward"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://ontology.eil.utoronto.ca/organization.owl#hasPolicy"/>
-            <Class IRI="#Patient_Funding_Transaction"/>
+            <ObjectProperty IRI="http://ontology.eil.utoronto.ca/organization.owl#hasResource"/>
+            <Class IRI="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#HospitalBed"/>
         </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#Division"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="obo:OMRSE_00000167"/>
-            <Class IRI="#Medical_Drug_Resource"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#Division"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="obo:OMRSE_00000167"/>
-            <Class IRI="#Pharmacy_Service"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#Division"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasSchedule"/>
-            <Class IRI="#Schedule_Service"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#Division"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasSchedule"/>
-            <Class IRI="#Specialist_Doctors"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#Division"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://www.ontology-of-units-of-measure.org/vocabularies/om-2/hasQuantity"/>
-            <Class IRI="#Medicine_quantity"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#Division"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://www.ontology-of-units-of-measure.org/vocabularies/om-2/hasQuantity"/>
-            <Class IRI="#1stClassBed"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#Division"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://www.ontology-of-units-of-measure.org/vocabularies/om-2/hasQuantity"/>
-            <Class IRI="#2ndClassBed"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#Division"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://www.ontology-of-units-of-measure.org/vocabularies/om-2/hasQuantity"/>
-            <Class IRI="#3rdClassBed"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#Division"/>
-        <DataSomeValuesFrom>
-            <DataProperty abbreviatedIRI="obo:OMRSE_00000137"/>
-            <Datatype abbreviatedIRI="xsd:gDay"/>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#Division"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="http://www.w3.org/2006/time#day"/>
-            <Datatype abbreviatedIRI="xsd:gDay"/>
-        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Adult_Vaccine_Service"/>
@@ -609,15 +550,7 @@
         <Class IRI="http://bioontology.org/ontologies/BiomedicalResourceOntology.owl#Material_Resource"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Medicine_classification"/>
-        <Class IRI="#Medical_Drug_Resource"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Medicine_quantity"/>
-        <Class IRI="#Medical_Drug_Resource"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Medicine_type"/>
+        <Class IRI="#Medicine_Classification_Resource"/>
         <Class IRI="#Medical_Drug_Resource"/>
     </SubClassOf>
     <SubClassOf>
@@ -643,6 +576,13 @@
     <SubClassOf>
         <Class IRI="#Pharmacy_Service"/>
         <Class IRI="http://bioontology.org/ontologies/BiomedicalResourceOntology.owl#People_Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pharmacy_Service"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://ontology.eil.utoronto.ca/organization.owl#hasResource"/>
+            <Class IRI="#Medical_Drug_Resource"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Private_insurance_Transaction"/>
@@ -684,8 +624,19 @@
         <Class IRI="#Schedule_Service"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Vaccine_Resource"/>
+        <Class IRI="#Medical_Drug_Resource"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Vaccine_Service"/>
-        <Class IRI="http://bioontology.org/ontologies/BiomedicalResourceOntology.owl#People_Resource"/>
+        <Class IRI="#Pharmacy_Service"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vaccine_Service"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://ontology.eil.utoronto.ca/organization.owl#hasResource"/>
+            <Class IRI="#Vaccine_Resource"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#1stClassBed"/>
