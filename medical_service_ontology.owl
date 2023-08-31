@@ -440,6 +440,13 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Hospital"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:RO_0001025"/>
+            <Class IRI="http://schema.org/State"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Hospital"/>
         <DataSomeValuesFrom>
             <DataProperty IRI="http://www.w3.org/2003/01/geo/wgs84_pos#lat"/>
             <Datatype abbreviatedIRI="xsd:integer"/>
@@ -469,6 +476,13 @@
     <SubClassOf>
         <Class IRI="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#HospitalBed"/>
         <DataSomeValuesFrom>
+            <DataProperty IRI="#hasNumberofBed"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#HospitalBed"/>
+        <DataSomeValuesFrom>
             <DataProperty IRI="#indonesian_rupiah"/>
             <Datatype abbreviatedIRI="xsd:decimal"/>
         </DataSomeValuesFrom>
@@ -485,6 +499,13 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://ontology.eil.utoronto.ca/organization.owl#hasResource"/>
             <Class IRI="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#HospitalBed"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Hospital_Ward"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:OMRSE_00000167"/>
+            <Class IRI="#Pharmacy_Service"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
