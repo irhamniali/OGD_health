@@ -8,7 +8,6 @@
     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
     xmlns:area="http://bioontology.org/ontologies/ResearchArea.owl#"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns="http://bioontology.org/ontologies/BiomedicalResources.owl#"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:dct="http://purl.org/dc/terms/"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
@@ -4451,7 +4450,7 @@ we think this should be deleted</desc:definition>
     >General data transformations</desc:definition>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </owl:DeprecatedClass>
-  <rdf:Description rdf:about="http://bioontology.org/ontologies/BiomedicalResources.owl#Environmental_Health_and_Safety">
+  <rdf:Description rdf:about="http://bioontology.org/ontologies/BiomedicalResourceOntology.owl#Environmental_Health_and_Safety">
     <core:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Environmental Health and Safety Resource</core:prefLabel>
   </rdf:Description>
