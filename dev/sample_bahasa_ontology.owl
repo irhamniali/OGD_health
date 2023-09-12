@@ -1,0 +1,2319 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://uthealth.io/ontology/pdbko.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://uthealth.io/ontology/pdbko.owl">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://purl.obolibrary.org/obo/omrse/releases/2023-05-19/omrse.owl</Import>
+    <Import>https://raw.githubusercontent.com/irhamniali/OGD_health/main/imports/BRO.owl</Import>
+    <Import>https://raw.githubusercontent.com/irhamniali/OGD_health/main/imports/GCI%20Health/GCI-Health.owl</Import>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <Literal>Irhamni Ali</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <Literal>Tuan Amith</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+        <Literal>“Medical service data ontology” (Ontologi Data Pelayanan Medis)</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="http://bioontology.org/ontologies/BiomedicalResourceOntology.owl#License"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://bioontology.org/ontologies/BiomedicalResourceOntology.owl#Material_Resource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation.owl#City"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#Division"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#OrganizationThing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#Policy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Adult_Vaccine_Service"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Afternoon_Service"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#All_Day_Service"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cardiologist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cash_Transaction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Children_Vaccine_Service"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Credit_Card_Transaction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Debit_Card_Transaction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Insurance_Payment_Transaction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Internist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Medical_Drug_Resource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Medicine_Classification_Resource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Morning_Service"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Neurologist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Noon_Service"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Patient_Funding_Transaction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Peditrician"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pharmacy_Service"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Private_insurance_Transaction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Public_Insurance_Transaction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pulmologist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Schedule_Service"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Specialist_Doctors"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Time_Arrangement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vaccine_Resource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vaccine_Service"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#1stClassBed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#2ndClassBed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#3rdClassBed"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="rdf:List"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="rdf:Property"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://ontology.eil.utoronto.ca/organization.owl#hasPolicy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/OMRSE_00000167"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPriceService"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSchedule"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#requires_payment_transaction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ontology-of-units-of-measure.org/vocabularies/om-2/hasQuantity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="rdfs:domain"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="rdfs:member"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="rdfs:range"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="rdfs:subClassOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="rdfs:subPropertyOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:allValuesFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:annotatedProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:annotatedSource"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:annotatedTarget"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:assertionProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:complementOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:datatypeComplementOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:differentFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:disjointUnionOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:disjointWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:distinctMembers"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:equivalentClass"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:equivalentProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:hasKey"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:hasSelf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:hasValue"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:intersectionOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:inverseOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:members"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:onClass"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:onDataRange"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:onDatatype"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:onProperties"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:onProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:oneOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:propertyChainAxiom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:propertyDisjointWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:sameAs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:someValuesFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:sourceIndividual"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:targetIndividual"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:targetValue"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:unionOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:withRestrictions"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://purl.obolibrary.org/obo/OMRSE_00000137"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasNumberofBed"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#health_care_provider_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#indonesian_rupiah"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="owl:cardinality"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="owl:maxCardinality"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="owl:maxQualifiedCardinality"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="owl:minCardinality"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="owl:minQualifiedCardinality"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.w3.org/2006/time#day"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/2006/time#Friday"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/2006/time#Monday"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/2006/time#Saturday"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/2006/time#Sunday"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/2006/time#Thursday"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/2006/time#Tuesday"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/2006/time#Wednesday"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/2006/time#unitDay"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/2006/time#unitHour"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/2006/time#unitMinute"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/2006/time#unitMonth"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/2006/time#unitSecond"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/2006/time#unitWeek"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wurvoc.org/vocabularies/om-1.8/day"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wurvoc.org/vocabularies/om-1.8/month"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wurvoc.org/vocabularies/om-1.8/week"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/isVersionOf"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="xsd:pattern"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2003/g/data-view#namespaceTransformation"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#changeNote"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#editorialNote"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#historyNote"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#note"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#scopeNote"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:date"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:duration"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:gDay"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:gMonth"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:gYear"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:gYearMonth"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:time"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Hospital"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#contains"/>
+            <Class IRI="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Hospital_Ward"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Hospital"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0001025"/>
+            <Class IRI="http://schema.org/State"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Hospital"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="http://www.w3.org/2003/01/geo/wgs84_pos#lat"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Hospital"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="http://www.w3.org/2003/01/geo/wgs84_pos#long"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#HospitalBed"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#locatedIn"/>
+            <Class IRI="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Hospital_Ward"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#HospitalBed"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#requires_payment_transaction"/>
+            <Class IRI="#Patient_Funding_Transaction"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#HospitalBed"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasNumberofBed"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#HospitalBed"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#indonesian_rupiah"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Hospital_Ward"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://ontology.eil.utoronto.ca/organization.owl#hasMember"/>
+            <Class IRI="#Specialist_Doctors"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Hospital_Ward"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://ontology.eil.utoronto.ca/organization.owl#hasResource"/>
+            <Class IRI="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#HospitalBed"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Hospital_Ward"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OMRSE_00000167"/>
+            <Class IRI="#Pharmacy_Service"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Hospital_Ward"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OMRSE_00000167"/>
+            <Class IRI="#Vaccine_Service"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Physician"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://ontology.eil.utoronto.ca/organization.owl#hasPolicy"/>
+            <Class IRI="#Schedule_Service"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Physician"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#requires_payment_transaction"/>
+            <Class IRI="#Patient_Funding_Transaction"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#PublicHospital"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://ontology.eil.utoronto.ca/organization.owl#hasLegalStatus"/>
+            <Class IRI="http://schema.org/State"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Adult_Vaccine_Service"/>
+        <Class IRI="#Vaccine_Service"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Afternoon_Service"/>
+        <Class IRI="#Schedule_Service"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Afternoon_Service"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="http://purl.obolibrary.org/obo/OMRSE_00000137"/>
+            <Datatype abbreviatedIRI="xsd:time"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#All_Day_Service"/>
+        <Class IRI="#Schedule_Service"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#All_Day_Service"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="http://purl.obolibrary.org/obo/OMRSE_00000137"/>
+            <Datatype abbreviatedIRI="xsd:time"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cardiologist"/>
+        <Class IRI="#Specialist_Doctors"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cash_Transaction"/>
+        <Class IRI="#Patient_Funding_Transaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cash_Transaction"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#indonesian_rupiah"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Children_Vaccine_Service"/>
+        <Class IRI="#Vaccine_Service"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Credit_Card_Transaction"/>
+        <Class IRI="#Patient_Funding_Transaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Credit_Card_Transaction"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#indonesian_rupiah"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Debit_Card_Transaction"/>
+        <Class IRI="#Patient_Funding_Transaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Debit_Card_Transaction"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#indonesian_rupiah"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Insurance_Payment_Transaction"/>
+        <Class IRI="#Patient_Funding_Transaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Internist"/>
+        <Class IRI="#Specialist_Doctors"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Medical_Drug_Resource"/>
+        <Class IRI="http://bioontology.org/ontologies/BiomedicalResourceOntology.owl#Material_Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Medicine_Classification_Resource"/>
+        <Class IRI="#Medical_Drug_Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Morning_Service"/>
+        <Class IRI="#Schedule_Service"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Neurologist"/>
+        <Class IRI="#Specialist_Doctors"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Noon_Service"/>
+        <Class IRI="#Schedule_Service"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Patient_Funding_Transaction"/>
+        <Class IRI="http://bioontology.org/ontologies/BiomedicalResourceOntology.owl#Funding_Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Peditrician"/>
+        <Class IRI="#Specialist_Doctors"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pharmacy_Service"/>
+        <Class IRI="http://bioontology.org/ontologies/BiomedicalResourceOntology.owl#People_Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pharmacy_Service"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://ontology.eil.utoronto.ca/organization.owl#hasResource"/>
+            <Class IRI="#Medical_Drug_Resource"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pharmacy_Service"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#requires_payment_transaction"/>
+            <Class IRI="#Patient_Funding_Transaction"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Private_insurance_Transaction"/>
+        <Class IRI="http://bioontology.org/ontologies/BiomedicalResourceOntology.owl#Private_Funding_Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Private_insurance_Transaction"/>
+        <Class IRI="#Insurance_Payment_Transaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Public_Insurance_Transaction"/>
+        <Class IRI="http://bioontology.org/ontologies/BiomedicalResourceOntology.owl#Federal_Funding_Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Public_Insurance_Transaction"/>
+        <Class IRI="#Insurance_Payment_Transaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pulmologist"/>
+        <Class IRI="#Specialist_Doctors"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Schedule_Service"/>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#Policy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Schedule_Service"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="http://purl.obolibrary.org/obo/OMRSE_00000137"/>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Specialist_Doctors"/>
+        <Class IRI="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Physician"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Time_Arrangement"/>
+        <Class IRI="#Schedule_Service"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vaccine_Resource"/>
+        <Class IRI="#Medical_Drug_Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vaccine_Service"/>
+        <Class IRI="#Pharmacy_Service"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vaccine_Service"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://ontology.eil.utoronto.ca/organization.owl#hasResource"/>
+            <Class IRI="#Vaccine_Resource"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#1stClassBed"/>
+        <Class IRI="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#HospitalBed"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#2ndClassBed"/>
+        <Class IRI="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#HospitalBed"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#3rdClassBed"/>
+        <Class IRI="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#HospitalBed"/>
+    </SubClassOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSchedule"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSchedule"/>
+        <Class IRI="#Schedule_Service"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasNumberofBed"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#health_care_provider_name"/>
+        <DataProperty IRI="http://bioontology.org/ontologies/BiomedicalResourceOntology.owl#Identifier"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#health_care_provider_name"/>
+        <Class IRI="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#ProfessionalHealthcareProvider"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasNumberofBed"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#health_care_provider_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#indonesian_rupiah"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://bioontology.org/ontologies/BiomedicalResourceOntology.owl#Federal_Funding_Resource</IRI>
+        <Literal xml:lang="id">Sumber_pendanaan_negara</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://bioontology.org/ontologies/BiomedicalResourceOntology.owl#Federal_Funding_Resource</IRI>
+        <Literal xml:lang="id">uang yang dimiliki untuk membayar dalam hal ini negara</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://bioontology.org/ontologies/BiomedicalResourceOntology.owl#Funding_Resource</IRI>
+        <Literal xml:lang="id">sumberDaya_pedanaan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://bioontology.org/ontologies/BiomedicalResourceOntology.owl#Funding_Resource</IRI>
+        <Literal xml:lang="id">Asal uang yang digunakan untuk melakukan transaksi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://bioontology.org/ontologies/BiomedicalResourceOntology.owl#Identifier</IRI>
+        <Literal xml:lang="id">Penanda</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://bioontology.org/ontologies/BiomedicalResourceOntology.owl#Identifier</IRI>
+        <Literal xml:lang="id">pengenal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://bioontology.org/ontologies/BiomedicalResourceOntology.owl#License</IRI>
+        <Literal xml:lang="id">Ijin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://bioontology.org/ontologies/BiomedicalResourceOntology.owl#License</IRI>
+        <Literal xml:lang="id">prosedur untuk boleh atau tidaknya menjalankan sesuatu</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://bioontology.org/ontologies/BiomedicalResourceOntology.owl#Material_Resource</IRI>
+        <Literal xml:lang="id">SumberDaya_material</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://bioontology.org/ontologies/BiomedicalResourceOntology.owl#Material_Resource</IRI>
+        <Literal xml:lang="id">kekayaan sumber daya material</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://bioontology.org/ontologies/BiomedicalResourceOntology.owl#People_Resource</IRI>
+        <Literal xml:lang="id">sumberdaya_orang_banyak</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://bioontology.org/ontologies/BiomedicalResourceOntology.owl#People_Resource</IRI>
+        <Literal xml:lang="id">segala sesuatu yang bisa dimanfaatkan orang banyak</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://bioontology.org/ontologies/BiomedicalResourceOntology.owl#Private_Funding_Resource</IRI>
+        <Literal xml:lang="id">Sumber_dana_mandiri</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://bioontology.org/ontologies/BiomedicalResourceOntology.owl#Private_Funding_Resource</IRI>
+        <Literal xml:lang="id">materi yang dimiliki oleh indvidu</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation.owl#City</IRI>
+        <Literal xml:lang="id">Kota</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation.owl#City</IRI>
+        <Literal xml:lang="id">wilayah pada sebuah geografis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Hospital</IRI>
+        <Literal xml:lang="id">Rumah Sakit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Hospital</IRI>
+        <Literal xml:lang="id">Lembaga pelayanan kesehatan yang menyelenggarakan pelayanan kesehatan secara paripurna</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#HospitalBed</IRI>
+        <Literal xml:lang="id">Tempat_Tidur_Rumah_sakit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#HospitalBed</IRI>
+        <Literal xml:lang="id">fasilitas yang digunakan untuk rawat inap di rumah sakit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Hospital_Ward</IRI>
+        <Literal xml:lang="id">Pengelola_rumah_sakit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Hospital_Ward</IRI>
+        <Literal xml:lang="id">lembaga atau organisasi yang menjalankan rumah sakit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Physician</IRI>
+        <Literal xml:lang="id">Dokter </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#Physician</IRI>
+        <Literal xml:lang="id">orang yang mempunyai kualifikasi khusus untuk mengobati orang sakit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#ProfessionalHealthcareProvider</IRI>
+        <Literal xml:lang="id">TenagaMedisProfesional</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#ProfessionalHealthcareProvider</IRI>
+        <Literal xml:lang="id">Orang yang mempunyai ijin menjalankan prosedur medis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#PublicHospital</IRI>
+        <Literal xml:lang="id">RumahSakitUmum</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#PublicHospital</IRI>
+        <Literal xml:lang="id">fasilitas yang digunakan untuk merawat orang sakit biasanya dikelola lembaga/organisasi pemerintah</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#contains</IRI>
+        <Literal xml:lang="id">mengandung</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#contains</IRI>
+        <Literal xml:lang="id">mempunyai sesuatu</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#locatedIn</IRI>
+        <Literal xml:lang="id">BerlokasiDi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#locatedIn</IRI>
+        <Literal xml:lang="id">tempat </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://ontology.eil.utoronto.ca/organization.owl#Division</IRI>
+        <Literal xml:lang="id">Bagian</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://ontology.eil.utoronto.ca/organization.owl#Division</IRI>
+        <Literal xml:lang="id">pecahan dari sesuatu</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://ontology.eil.utoronto.ca/organization.owl#OrganizationThing</IRI>
+        <Literal xml:lang="id">Keorganisasian</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://ontology.eil.utoronto.ca/organization.owl#OrganizationThing</IRI>
+        <Literal xml:lang="id">karakteristik organisasi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://ontology.eil.utoronto.ca/organization.owl#Policy</IRI>
+        <Literal xml:lang="id">Kebijakan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://ontology.eil.utoronto.ca/organization.owl#Policy</IRI>
+        <Literal xml:lang="id">aturan tertentu untuk melaksanakan sesuatu</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://ontology.eil.utoronto.ca/organization.owl#hasLegalStatus</IRI>
+        <Literal xml:lang="id">mempunyaiStatusHukum</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://ontology.eil.utoronto.ca/organization.owl#hasLegalStatus</IRI>
+        <Literal xml:lang="id">mempunyai catatan dalam administrasi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://ontology.eil.utoronto.ca/organization.owl#hasMember</IRI>
+        <Literal xml:lang="id">mempunyaiAnggota</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://ontology.eil.utoronto.ca/organization.owl#hasMember</IRI>
+        <Literal xml:lang="id">orang /organisasi yang terafiliasi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://ontology.eil.utoronto.ca/organization.owl#hasPolicy</IRI>
+        <Literal xml:lang="id">mempunyaiKebijakan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://ontology.eil.utoronto.ca/organization.owl#hasPolicy</IRI>
+        <Literal xml:lang="id">memiliki aturan khusus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://ontology.eil.utoronto.ca/organization.owl#hasResource</IRI>
+        <Literal xml:lang="id">mempunyai_SumberDaya</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://ontology.eil.utoronto.ca/organization.owl#hasResource</IRI>
+        <Literal xml:lang="id">memiliki segala sesuatu yang bisa dimanfaatkan </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/OMRSE_00000137</IRI>
+        <Literal xml:lang="id">waktu pada hari</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://purl.obolibrary.org/obo/OMRSE_00000137</IRI>
+        <Literal xml:lang="id">jenis atau klasifikasi pada waktu hari</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/OMRSE_00000167</IRI>
+        <Literal xml:lang="id">Menyediakan Layanan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://purl.obolibrary.org/obo/OMRSE_00000167</IRI>
+        <Literal xml:lang="id">mempunyai prosedur atau kegiatan untuk pelanggan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0001025</IRI>
+        <Literal xml:lang="id">BerlokasiPada</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0001025</IRI>
+        <Literal xml:lang="id">menandakan tempat</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/elements/1.1/creator</IRI>
+        <Literal xml:lang="id">pencipta</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://purl.org/dc/elements/1.1/creator</IRI>
+        <Literal xml:lang="id">orang atau badan organisasi yang membuat sesuatu</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/elements/1.1/title</IRI>
+        <Literal xml:lang="id">Judul</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://purl.org/dc/elements/1.1/title</IRI>
+        <Literal xml:lang="id">ungkapan yang menyatakan suatu karya</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/created</IRI>
+        <Literal xml:lang="id">tercipta</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://purl.org/dc/terms/created</IRI>
+        <Literal xml:lang="id">sebuah proses untuk membuat sesuatu</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/isVersionOf</IRI>
+        <Literal xml:lang="id">VersiDari</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://purl.org/dc/terms/isVersionOf</IRI>
+        <Literal xml:lang="id">jenis lain dari sesuatu</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://schema.org/State</IRI>
+        <Literal xml:lang="id">Negara</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://schema.org/State</IRI>
+        <Literal xml:lang="id">persekutuan bangsa dalam suatu daerah yang tentu batas-batasnya dan diurus oleh badan pemerintah yang teratur&apos;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Adult_Vaccine_Service</IRI>
+        <Literal xml:lang="id">Layanan_vaksin_dewasa</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#Adult_Vaccine_Service</IRI>
+        <Literal xml:lang="id">kegiatan memberikan vaksinasi untuk orang dewasa</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Afternoon_Service</IRI>
+        <Literal xml:lang="id">Layanan_sore</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#Afternoon_Service</IRI>
+        <Literal xml:lang="id">kegiatan pada sore hari</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#All_Day_Service</IRI>
+        <Literal xml:lang="id">Layanan_Sepanjang_Hari</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#All_Day_Service</IRI>
+        <Literal xml:lang="id">kegiatan layanan yang dilakukan mulai dari pagi-siang dan sore hari</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Cardiologist</IRI>
+        <Literal xml:lang="id">Ahli Jantung dan pembuluh darah</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#Cardiologist</IRI>
+        <Literal xml:lang="id">orang yang memiliki keahlian khusus dibidang medis untuk bidang jantung dan pembuluh darah</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Cash_Transaction</IRI>
+        <Literal xml:lang="id">Transaksi_tunai</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#Cash_Transaction</IRI>
+        <Literal xml:lang="id">pembayaran dengan menggunakan uang </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Children_Vaccine_Service</IRI>
+        <Literal xml:lang="id">Layanan_vaksinasi_anak</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#Children_Vaccine_Service</IRI>
+        <Literal xml:lang="id">kegiatan untuk melakukan vaksinasi pada anak</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Credit_Card_Transaction</IRI>
+        <Literal xml:lang="id">Transaksi_kartu_kredit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#Credit_Card_Transaction</IRI>
+        <Literal xml:lang="id">proses jual beli dengan meggunakan kartu kredit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Debit_Card_Transaction</IRI>
+        <Literal xml:lang="id">Transaksi_kartu_debit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#Debit_Card_Transaction</IRI>
+        <Literal xml:lang="id">proses jual beli dengan meggunakan kartu debit </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Insurance_Payment_Transaction</IRI>
+        <Literal xml:lang="id">Transaksi_pembayaran_Asuransi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#Insurance_Payment_Transaction</IRI>
+        <Literal xml:lang="id">proses jual beli dengan menggunakan asuransi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Internist</IRI>
+        <Literal xml:lang="id">Ahli Penyakit Dalam</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#Internist</IRI>
+        <Literal xml:lang="id">orang yang memiliki keahlian khusus dibidang medis untuk bidang organ dalam manusia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Medical_Drug_Resource</IRI>
+        <Literal xml:lang="id">Sumber_obat-obatan_medis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#Medical_Drug_Resource</IRI>
+        <Literal xml:lang="id">Aset berupa obat-obatan medis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Medicine_Classification_Resource</IRI>
+        <Literal xml:lang="id">Klasifikasi_SumberDaya_Medis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#Medicine_Classification_Resource</IRI>
+        <Literal xml:lang="id">jenis atau tipe sebuah aset</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Morning_Service</IRI>
+        <Literal xml:lang="id">Layanan_Pagi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#Morning_Service</IRI>
+        <Literal xml:lang="id">kegiatan yang dilaksanakan pada pagi hari biasanya dibawah jam 12</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Neurologist</IRI>
+        <Literal xml:lang="id">Ahli Syaraf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#Neurologist</IRI>
+        <Literal xml:lang="id">orang yang memiliki keahlian khusus dibidang medis untuk bidang syaraf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Noon_Service</IRI>
+        <Literal xml:lang="id">Layanan_Siang</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#Noon_Service</IRI>
+        <Literal xml:lang="id">kegiatan layanan yang dilakukan siang hari</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Patient_Funding_Transaction</IRI>
+        <Literal xml:lang="id">Transaksi_dana_pasien</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#Patient_Funding_Transaction</IRI>
+        <Literal xml:lang="id">proses jual beli seorang pasien</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Peditrician</IRI>
+        <Literal xml:lang="id">Ahli Penyakit Anak</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#Peditrician</IRI>
+        <Literal xml:lang="id">orang yang memiliki keahlian khusus dibidang medis untuk bidang penyakit anak</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Pharmacy_Service</IRI>
+        <Literal xml:lang="id">Layanan_farmasi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#Pharmacy_Service</IRI>
+        <Literal xml:lang="id">layanan rumah sakit yang berurusan dengan obat-obatan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Private_insurance_Transaction</IRI>
+        <Literal xml:lang="id">Transksi_Asuransi_Mandiri</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#Private_insurance_Transaction</IRI>
+        <Literal xml:lang="id">proses interaksi dengan menggunakan pihak ketiga</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Public_Insurance_Transaction</IRI>
+        <Literal xml:lang="id">Transaksi_Asuransi_Publik</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#Public_Insurance_Transaction</IRI>
+        <Literal xml:lang="id">proses jual beli dengan menggunakan asuransi yang dimiliki pemerintah</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Pulmologist</IRI>
+        <Literal xml:lang="id">Ahli Paru-paru</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#Pulmologist</IRI>
+        <Literal xml:lang="id">orang yang memiliki keahlian khusus dibidang medis untuk bidang paru-paru</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Schedule_Service</IRI>
+        <Literal xml:lang="id">Jadwal_Pelayanan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#Schedule_Service</IRI>
+        <Literal xml:lang="id">pernyataan sebuah layanan berlangsung</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Specialist_Doctors</IRI>
+        <Literal xml:lang="id">Dokter_Spesialis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#Specialist_Doctors</IRI>
+        <Literal xml:lang="id">Tenaga medis yang mempunyai kemampuan khusus </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Time_Arrangement</IRI>
+        <Literal xml:lang="id">Pengaturan_waktu</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#Time_Arrangement</IRI>
+        <Literal xml:lang="id">penjadwalan berdasarkan periode tertentu</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Vaccine_Resource</IRI>
+        <Literal xml:lang="id">SumberDaya_vaksin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#Vaccine_Resource</IRI>
+        <Literal xml:lang="id">Aset sebuah layanan berupa vaksinasi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Vaccine_Service</IRI>
+        <Literal xml:lang="id">Layanan_vaksinasi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#Vaccine_Service</IRI>
+        <Literal xml:lang="id">kegiatan pemberian vaksinasi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasNumberofBed</IRI>
+        <Literal xml:lang="id">mempunyaiJumlahTempatTidur</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#hasNumberofBed</IRI>
+        <Literal xml:lang="id">banyaknya tempat tidur pada sebuah rumah sakit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasPriceService</IRI>
+        <Literal xml:lang="id">mempunyaiHargaPelayanan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#hasPriceService</IRI>
+        <Literal xml:lang="id">patokan nilai dalam sebuah transaksi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasSchedule</IRI>
+        <Literal xml:lang="id">mempunyaiJadwal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#hasSchedule</IRI>
+        <Literal xml:lang="id">mempunyai aturan waktu sebuah pelayanan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#health_care_provider_name</IRI>
+        <Literal xml:lang="id">Nama_penyedia_layanan_kesehatan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#health_care_provider_name</IRI>
+        <Literal xml:lang="id">entitas atau lembaga yang mempunyai izin khusus untuk menjalankan layanan medis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#indonesian_rupiah</IRI>
+        <Literal xml:lang="id">Rupiah_indonesia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#indonesian_rupiah</IRI>
+        <Literal xml:lang="id">mata uang resmi republik indonesia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#requires_payment_transaction</IRI>
+        <Literal xml:lang="id">membutuhkan_transaksi_pembayaran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#requires_payment_transaction</IRI>
+        <Literal xml:lang="id">prosedur untuk melakukan jual beli </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#1stClassBed</IRI>
+        <Literal xml:lang="id">Tempat_tidur_Kelas_satu</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#1stClassBed</IRI>
+        <Literal xml:lang="id">strata atau tingkatan pertama pada layanan inap rumah sakit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#2ndClassBed</IRI>
+        <Literal xml:lang="id">Kelas_dua</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#2ndClassBed</IRI>
+        <Literal xml:lang="id">kelas urutas kedua</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#3rdClassBed</IRI>
+        <Literal xml:lang="id">Kelas_tiga</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#3rdClassBed</IRI>
+        <Literal xml:lang="id">kelas urutas ketiga</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.ontology-of-units-of-measure.org/vocabularies/om-2/hasQuantity</IRI>
+        <Literal xml:lang="id">mempunyaiJumlah</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://www.ontology-of-units-of-measure.org/vocabularies/om-2/hasQuantity</IRI>
+        <Literal xml:lang="id">memiliki karakteristik berupa kuantitas tertentu</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.opengis.net/def/uom/ISO-8601/0/Gregorian</IRI>
+        <Literal xml:lang="id">Gregorian</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://www.opengis.net/def/uom/ISO-8601/0/Gregorian</IRI>
+        <Literal xml:lang="id">sistem kalender yang diambil dari kaisar gregori</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>rdf:List</AbbreviatedIRI>
+        <Literal xml:lang="id">Daftar</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>rdf:List</AbbreviatedIRI>
+        <Literal xml:lang="id">kumpulan sesuatu yang ditulis secara sistematis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>rdf:Property</AbbreviatedIRI>
+        <Literal xml:lang="id">Properti</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>rdf:Property</AbbreviatedIRI>
+        <Literal xml:lang="id">karakteristik</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>rdfs:domain</AbbreviatedIRI>
+        <Literal xml:lang="id">domein</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>rdfs:domain</AbbreviatedIRI>
+        <Literal xml:lang="id">wilayah </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>rdfs:member</AbbreviatedIRI>
+        <Literal xml:lang="id">Anggota </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>rdfs:member</AbbreviatedIRI>
+        <Literal xml:lang="id">orang/lembaga/organisasi yang mendpat karakterkhusus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>rdfs:range</AbbreviatedIRI>
+        <Literal xml:lang="id">Jangkauan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>rdfs:range</AbbreviatedIRI>
+        <Literal xml:lang="id">cakupan yang digunakan sesuatu</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>rdfs:subClassOf</AbbreviatedIRI>
+        <Literal xml:lang="id">SubKelasDari</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>rdfs:subClassOf</AbbreviatedIRI>
+        <Literal xml:lang="id">dibawah dari kelas tertentu</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>rdfs:subPropertyOf</AbbreviatedIRI>
+        <Literal xml:lang="id">SubMilikdari</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>rdfs:subPropertyOf</AbbreviatedIRI>
+        <Literal xml:lang="id">kepemilikan sesuatu</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/2000/10/swap/pim/contact#Person</IRI>
+        <Literal xml:lang="id">orang</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://www.w3.org/2000/10/swap/pim/contact#Person</IRI>
+        <Literal xml:lang="id">pelaku</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>xsd:date</AbbreviatedIRI>
+        <Literal xml:lang="id">tanggal </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>xsd:date</AbbreviatedIRI>
+        <Literal xml:lang="id">bilangan yang menyatakan hari yang ke berapa dalam bulan; hari bulan:</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>xsd:dateTime</AbbreviatedIRI>
+        <Literal xml:lang="id">TanggalWaktu</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>xsd:dateTime</AbbreviatedIRI>
+        <Literal xml:lang="id">satuan urutan hari  dalam bulan yang digunakan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>xsd:decimal</AbbreviatedIRI>
+        <Literal xml:lang="id">Desimal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>xsd:decimal</AbbreviatedIRI>
+        <Literal xml:lang="id">desimal adalah bilangan yang punya penyebut khusus, yaitu sepuluh, seratus, seribu, dan seterusnya</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>xsd:duration</AbbreviatedIRI>
+        <Literal xml:lang="id">Durasi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>xsd:duration</AbbreviatedIRI>
+        <Literal xml:lang="id">lamanya sebuah proses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>xsd:gDay</AbbreviatedIRI>
+        <Literal xml:lang="id">hariBerjalan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>xsd:gDay</AbbreviatedIRI>
+        <Literal xml:lang="id">Satuan waktu dalam hal ini 24 jam yang sedang berlangsung</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>xsd:gMonth</AbbreviatedIRI>
+        <Literal xml:lang="id">bulanBerlaku</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>xsd:gMonth</AbbreviatedIRI>
+        <Literal xml:lang="id">bulan yang dipakai </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>xsd:gYear</AbbreviatedIRI>
+        <Literal xml:lang="id">TahunBerjalan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>xsd:gYear</AbbreviatedIRI>
+        <Literal xml:lang="id">Satuan waktu dalam hal ini 365 hari yang sedang berlangsung</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>xsd:gYearMonth</AbbreviatedIRI>
+        <Literal xml:lang="id">TahunBulanBerjalan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>xsd:gYearMonth</AbbreviatedIRI>
+        <Literal xml:lang="id">Satuan waktu untuk mengukur 365 hari</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>xsd:integer</AbbreviatedIRI>
+        <Literal xml:lang="id">Intejer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>xsd:integer</AbbreviatedIRI>
+        <Literal xml:lang="id">bilangan bulat.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>xsd:pattern</AbbreviatedIRI>
+        <Literal xml:lang="id">pola</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>xsd:pattern</AbbreviatedIRI>
+        <Literal xml:lang="id">susunan atau corak pada sebuah entitas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>xsd:string</AbbreviatedIRI>
+        <Literal xml:lang="id">string</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>xsd:string</AbbreviatedIRI>
+        <Literal xml:lang="id">mengacu kepada tipe yang berupa karakter bebas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>xsd:time</AbbreviatedIRI>
+        <Literal xml:lang="id">waktu </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>xsd:time</AbbreviatedIRI>
+        <Literal xml:lang="id">satuan untuk mengukur</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>owl:allValuesFrom</AbbreviatedIRI>
+        <Literal xml:lang="id">semuaNilaiDari</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>owl:allValuesFrom</AbbreviatedIRI>
+        <Literal xml:lang="id">keseluruhan isi dari sesuatu</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>owl:annotatedProperty</AbbreviatedIRI>
+        <Literal xml:lang="id">PropertiTercatat</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>owl:annotatedProperty</AbbreviatedIRI>
+        <Literal xml:lang="id">karakteristik yang tercatat pada sesuatu</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>owl:annotatedSource</AbbreviatedIRI>
+        <Literal xml:lang="id">Sumber_tercatat</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>owl:annotatedSource</AbbreviatedIRI>
+        <Literal xml:lang="id">materi yang tercatat</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>owl:annotatedTarget</AbbreviatedIRI>
+        <Literal xml:lang="id">TargetBeranotasi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>owl:annotatedTarget</AbbreviatedIRI>
+        <Literal xml:lang="id">Kumpulan yang cocok secara minimal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>owl:assertionProperty</AbbreviatedIRI>
+        <Literal xml:lang="id">PernyataanProperti</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>owl:assertionProperty</AbbreviatedIRI>
+        <Literal xml:lang="id">deklarasi terkait karakteristik</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>owl:cardinality</AbbreviatedIRI>
+        <Literal xml:lang="id">himpunan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>owl:cardinality</AbbreviatedIRI>
+        <Literal xml:lang="id">suatu kumpulan dapat dimengerti sebagai ukuran banyaknya anggota yang ada dalam himpunan tersebu</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>owl:complementOf</AbbreviatedIRI>
+        <Literal xml:lang="id">PelengkapDari</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>owl:complementOf</AbbreviatedIRI>
+        <Literal xml:lang="id">sesuatu yang dipakai ang dipakai untuk menutupi kekurangan </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>owl:datatypeComplementOf</AbbreviatedIRI>
+        <Literal xml:lang="id">DataPelengkapDari</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>owl:datatypeComplementOf</AbbreviatedIRI>
+        <Literal xml:lang="id">data yang melengkapi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>owl:differentFrom</AbbreviatedIRI>
+        <Literal xml:lang="id">berbedaDari</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>owl:differentFrom</AbbreviatedIRI>
+        <Literal xml:lang="id">mempunyai karakteristik yang lain dari </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>owl:disjointUnionOf</AbbreviatedIRI>
+        <Literal xml:lang="id">tidakTergabungDariSatuan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>owl:disjointUnionOf</AbbreviatedIRI>
+        <Literal xml:lang="id">Sesuatu yang tidak tergabung atau terpisah dari sesuatu</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>owl:disjointWith</AbbreviatedIRI>
+        <Literal xml:lang="id">tidakTergabungDari</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>owl:disjointWith</AbbreviatedIRI>
+        <Literal xml:lang="id">Bukan bagian dari kelompok</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>owl:distinctMembers</AbbreviatedIRI>
+        <Literal xml:lang="id">anggota khusus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>owl:distinctMembers</AbbreviatedIRI>
+        <Literal xml:lang="id">Orang yang mendapat perlakuan khusus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>owl:equivalentClass</AbbreviatedIRI>
+        <Literal xml:lang="id">KelasSetara</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>owl:equivalentClass</AbbreviatedIRI>
+        <Literal xml:lang="id">entitas yang sama dengan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>owl:equivalentProperty</AbbreviatedIRI>
+        <Literal xml:lang="id">PropertiSetara</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>owl:equivalentProperty</AbbreviatedIRI>
+        <Literal xml:lang="id">entitas yang setara</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>owl:hasKey</AbbreviatedIRI>
+        <Literal xml:lang="id">mempunyaiKunci</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>owl:hasKey</AbbreviatedIRI>
+        <Literal xml:lang="id">kondisi keadaan dimana sesuaru mempunyai kunci</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>owl:hasSelf</AbbreviatedIRI>
+        <Literal xml:lang="id">mempunyai Diri</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>owl:hasSelf</AbbreviatedIRI>
+        <Literal xml:lang="id">memiliki karakteristik berupa entitas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>owl:hasValue</AbbreviatedIRI>
+        <Literal xml:lang="id">mempunyaiNilai</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>owl:hasValue</AbbreviatedIRI>
+        <Literal xml:lang="id">sesuatu yang melekat</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>owl:intersectionOf</AbbreviatedIRI>
+        <Literal xml:lang="id">PersimpanganDari</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>owl:intersectionOf</AbbreviatedIRI>
+        <Literal xml:lang="id">bentuk lain dari sesuatu</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>owl:inverseOf</AbbreviatedIRI>
+        <Literal xml:lang="id">KebalikanDari</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>owl:inverseOf</AbbreviatedIRI>
+        <Literal xml:lang="id">kondisi menyatakan hal yang sebaliknya</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>owl:maxCardinality</AbbreviatedIRI>
+        <Literal xml:lang="id">himpunanMaximal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>owl:maxCardinality</AbbreviatedIRI>
+        <Literal xml:lang="id">Kumpulan yang mampu terdefinisi secara maksimal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>owl:maxQualifiedCardinality</AbbreviatedIRI>
+        <Literal xml:lang="id">HimpunanSecaraMaximal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>owl:maxQualifiedCardinality</AbbreviatedIRI>
+        <Literal xml:lang="id">Kumpulan yang cocok secara maksimal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>owl:members</AbbreviatedIRI>
+        <Literal xml:lang="id">Anggota-anggota</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>owl:members</AbbreviatedIRI>
+        <Literal xml:lang="id">bentuk jamak dari  orang /organisasi yang terafiliasi </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>owl:minCardinality</AbbreviatedIRI>
+        <Literal xml:lang="id">himpunanMinimal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>owl:minCardinality</AbbreviatedIRI>
+        <Literal xml:lang="id">kumpulan sesuatu yang mempunyai nilai minimal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>owl:minQualifiedCardinality</AbbreviatedIRI>
+        <Literal xml:lang="id">minHImpunanBerkualitas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>owl:minQualifiedCardinality</AbbreviatedIRI>
+        <Literal xml:lang="id">kumpulan sesuatu yang ditulis secara sistematis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>owl:onClass</AbbreviatedIRI>
+        <Literal xml:lang="id">padaKelas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>owl:onClass</AbbreviatedIRI>
+        <Literal xml:lang="id">mengacu kepada kelas </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>owl:onDataRange</AbbreviatedIRI>
+        <Literal xml:lang="id">padaCakupanData</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>owl:onDataRange</AbbreviatedIRI>
+        <Literal xml:lang="id">jangkauan yang melekat pada data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>owl:onDatatype</AbbreviatedIRI>
+        <Literal xml:lang="id">padaTypeData</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>owl:onDatatype</AbbreviatedIRI>
+        <Literal xml:lang="id">jenis atau karakteristik khusus dari sebuah data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>owl:onProperties</AbbreviatedIRI>
+        <Literal xml:lang="id">padaProperti</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>owl:onProperties</AbbreviatedIRI>
+        <Literal xml:lang="id">sesuatu yang melekat ada sesuatu sebagai identifikasi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>owl:onProperty</AbbreviatedIRI>
+        <Literal xml:lang="id">memilikiProperti</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>owl:onProperty</AbbreviatedIRI>
+        <Literal xml:lang="id">mempunyai ciri khas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>owl:oneOf</AbbreviatedIRI>
+        <Literal xml:lang="id">SalahsatuDari</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>owl:oneOf</AbbreviatedIRI>
+        <Literal xml:lang="id">bagian dari sesuatu yang banyak</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>owl:propertyChainAxiom</AbbreviatedIRI>
+        <Literal xml:lang="id">AksiomaRantaiProperti</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>owl:propertyChainAxiom</AbbreviatedIRI>
+        <Literal xml:lang="id"> pernyataan yang dapat diterima sebagai kebenaran tanpa pembuktian pada suatu karakteristik</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>owl:propertyDisjointWith</AbbreviatedIRI>
+        <Literal xml:lang="id">PropertiTerpisahDari</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>owl:propertyDisjointWith</AbbreviatedIRI>
+        <Literal xml:lang="id">karakteristik yang terpisah</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>owl:sameAs</AbbreviatedIRI>
+        <Literal xml:lang="id">SamaDengan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>owl:sameAs</AbbreviatedIRI>
+        <Literal xml:lang="id">kondisi yang sama </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>owl:someValuesFrom</AbbreviatedIRI>
+        <Literal xml:lang="id">beberapaNilaiDari</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>owl:someValuesFrom</AbbreviatedIRI>
+        <Literal xml:lang="id"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>owl:sourceIndividual</AbbreviatedIRI>
+        <Literal xml:lang="id">sumberdaya_individu</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>owl:sourceIndividual</AbbreviatedIRI>
+        <Literal xml:lang="id">segala sesuatu yang bisa dimanfaatkan oleh individu</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>owl:targetIndividual</AbbreviatedIRI>
+        <Literal xml:lang="id">TargetIndividual</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>owl:targetIndividual</AbbreviatedIRI>
+        <Literal xml:lang="id">sasaran individu</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>owl:targetValue</AbbreviatedIRI>
+        <Literal xml:lang="id">nilaiTarget</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>owl:targetValue</AbbreviatedIRI>
+        <Literal xml:lang="id">nilai sasaran </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>owl:topDataProperty</AbbreviatedIRI>
+        <Literal xml:lang="id">property_data_teratas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>owl:topDataProperty</AbbreviatedIRI>
+        <Literal xml:lang="id">cirikhas paling banyak yg dimiliki data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>owl:topObjectProperty</AbbreviatedIRI>
+        <Literal xml:lang="id">objekPropertiTeratas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>owl:topObjectProperty</AbbreviatedIRI>
+        <Literal xml:lang="id">karakteristik teratas pada sebuah objek</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>owl:unionOf</AbbreviatedIRI>
+        <Literal xml:lang="id">GabunganDari</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>owl:unionOf</AbbreviatedIRI>
+        <Literal xml:lang="id">perpaduan dari entitas </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>owl:withRestrictions</AbbreviatedIRI>
+        <Literal xml:lang="id">denganLarangan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>owl:withRestrictions</AbbreviatedIRI>
+        <Literal xml:lang="id">entitas atau prosedur  yang tidak boleh dilakukan atau dimasukan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/2003/01/geo/wgs84_pos#lat</IRI>
+        <Literal xml:lang="id">Latitud</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://www.w3.org/2003/01/geo/wgs84_pos#lat</IRI>
+        <Literal xml:lang="id">kode koordinat</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/2003/01/geo/wgs84_pos#long</IRI>
+        <Literal xml:lang="id">panjang</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://www.w3.org/2003/01/geo/wgs84_pos#long</IRI>
+        <Literal xml:lang="id">satuan yang mengukur dari satu titik ke titik lain secara vertikal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/2003/g/data-view#namespaceTransformation</IRI>
+        <Literal xml:lang="id">TRansformasiNamaRuang</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://www.w3.org/2003/g/data-view#namespaceTransformation</IRI>
+        <Literal xml:lang="id">perubahan pada ruang </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/2004/02/skos/core#changeNote</IRI>
+        <Literal xml:lang="id">CatatanPerubahan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://www.w3.org/2004/02/skos/core#changeNote</IRI>
+        <Literal xml:lang="id">sejarah perubahan </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/2004/02/skos/core#definition</IRI>
+        <Literal xml:lang="id">definisi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://www.w3.org/2004/02/skos/core#definition</IRI>
+        <Literal xml:lang="id">ungkapan atau makna sebuah istilah</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/2004/02/skos/core#editorialNote</IRI>
+        <Literal xml:lang="id">CatatanEditorial</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://www.w3.org/2004/02/skos/core#editorialNote</IRI>
+        <Literal xml:lang="id">Pernyataan dari editor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/2004/02/skos/core#historyNote</IRI>
+        <Literal xml:lang="id">SejarahCatatan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://www.w3.org/2004/02/skos/core#historyNote</IRI>
+        <Literal xml:lang="id">menuliskan sesuatu untuk peringatan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/2004/02/skos/core#note</IRI>
+        <Literal xml:lang="id"> Keterangan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://www.w3.org/2004/02/skos/core#note</IRI>
+        <Literal xml:lang="id">deklarasi yang menyatakan sesuatu</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/2004/02/skos/core#prefLabel</IRI>
+        <Literal xml:lang="id">PreferensiLabel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://www.w3.org/2004/02/skos/core#prefLabel</IRI>
+        <Literal xml:lang="id">kecenderungan pemberian istilah</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/2004/02/skos/core#scopeNote</IRI>
+        <Literal xml:lang="id">LinkupCatatan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://www.w3.org/2004/02/skos/core#scopeNote</IRI>
+        <Literal xml:lang="id">catatan yang menjelaskan cakupan sesuatu</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/2006/time#Friday</IRI>
+        <Literal xml:lang="id">Jumat</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://www.w3.org/2006/time#Friday</IRI>
+        <Literal xml:lang="id">Hari keenam dalam satu minggu</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/2006/time#Monday</IRI>
+        <Literal xml:lang="id">Senin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://www.w3.org/2006/time#Monday</IRI>
+        <Literal xml:lang="id">hari kedua dalam minggu</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/2006/time#Saturday</IRI>
+        <Literal xml:lang="id">Sabtu</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://www.w3.org/2006/time#Saturday</IRI>
+        <Literal xml:lang="id">hari ketujuh dalam hari</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/2006/time#Sunday</IRI>
+        <Literal xml:lang="id">MInggu</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://www.w3.org/2006/time#Sunday</IRI>
+        <Literal xml:lang="id">hari ketujuh dalam hari</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/2006/time#Thursday</IRI>
+        <Literal xml:lang="id">Kamis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://www.w3.org/2006/time#Thursday</IRI>
+        <Literal xml:lang="id">hari kelima dalam satu minggu</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/2006/time#Tuesday</IRI>
+        <Literal xml:lang="id">Selasa</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://www.w3.org/2006/time#Tuesday</IRI>
+        <Literal xml:lang="id">Hari Ketiga dalam satu minggu</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/2006/time#Wednesday</IRI>
+        <Literal xml:lang="id">Rabu</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://www.w3.org/2006/time#Wednesday</IRI>
+        <Literal xml:lang="id">Hari keempat dalam satu minggu</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/2006/time#day</IRI>
+        <Literal xml:lang="id">hari</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://www.w3.org/2006/time#day</IRI>
+        <Literal xml:lang="id">satuan waktu yang diukur dengan 24 jam</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/2006/time#unitDay</IRI>
+        <Literal xml:lang="id">unitHari</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://www.w3.org/2006/time#unitDay</IRI>
+        <Literal xml:lang="id">jumlah hari yang digunakan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/2006/time#unitHour</IRI>
+        <Literal xml:lang="id">unitJam</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://www.w3.org/2006/time#unitHour</IRI>
+        <Literal xml:lang="id">Satuan untuk mengukur waktu atau jam</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/2006/time#unitMinute</IRI>
+        <Literal xml:lang="id">UnitpadaMenit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://www.w3.org/2006/time#unitMinute</IRI>
+        <Literal xml:lang="id">Satuan pada waktu terdiri atas 60 detik</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/2006/time#unitMonth</IRI>
+        <Literal xml:lang="id">unitBulan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://www.w3.org/2006/time#unitMonth</IRI>
+        <Literal xml:lang="id">satuan jumlah bulan yang dipakai</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/2006/time#unitSecond</IRI>
+        <Literal xml:lang="id">unitKedua</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://www.w3.org/2006/time#unitSecond</IRI>
+        <Literal xml:lang="id">unit yang berada pada posisi kedua</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/2006/time#unitWeek</IRI>
+        <Literal xml:lang="id">unitMinggu </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://www.w3.org/2006/time#unitWeek</IRI>
+        <Literal xml:lang="id">Satuan yang digunakan untuk mengukur minggu</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.wurvoc.org/vocabularies/om-1.8/day</IRI>
+        <Literal xml:lang="id">hari</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://www.wurvoc.org/vocabularies/om-1.8/day</IRI>
+        <Literal xml:lang="id">satuan waktu yang diukur dengan 24 jam</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.wurvoc.org/vocabularies/om-1.8/month</IRI>
+        <Literal xml:lang="id">Bulan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://www.wurvoc.org/vocabularies/om-1.8/month</IRI>
+        <Literal xml:lang="id">satuan waktu yang digunakan untuk mengukur waktu dalam 30 hari</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.wurvoc.org/vocabularies/om-1.8/week</IRI>
+        <Literal xml:lang="id">Minggu</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://www.wurvoc.org/vocabularies/om-1.8/week</IRI>
+        <Literal xml:lang="id">hari pertama dalam minggu</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/Person</IRI>
+        <Literal xml:lang="id">Person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://xmlns.com/foaf/0.1/Person</IRI>
+        <Literal xml:lang="id">Orang atau manusia </Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 5.5.0.2023-01-14T12:41:38Z) https://github.com/owlcs/owlapi/ -->
+
+
