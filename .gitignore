@@ -2,3 +2,5 @@
 *.bkp
 *.xml
 .$Update_ontology_Diagram_3.1.drawio.dtmp
+medical_service_ontology.properties
+.DS_Store
